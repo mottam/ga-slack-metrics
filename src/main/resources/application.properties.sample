@@ -1,0 +1,2 @@
+slack.webhook.url=<YOUR_SLACK_WEBHOOK>
+analytics.viewid=<YOUR_VIEW_ID>
