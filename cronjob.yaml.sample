@@ -1,0 +1,15 @@
+apiVersion: batch/v2alpha1
+kind: CronJob
+metadata:
+  name: ga-slack-metrics
+  namespace: default
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: ga-slack-metrics
+            image: <YOUR_IMAGE>
+          restartPolicy: OnFailure

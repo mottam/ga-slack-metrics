@@ -1,0 +1,15 @@
+imagetag: <YOUR_TAG>
+
+s3:
+  bucket: configs.elo7.com.br
+  basepath: metrics/prod
+  region: sa-east-1
+
+files:
+  - s3path: credential.json
+    filename: credential.json
+  - s3path: application.properties
+    filename: src/main/resources/application.properties
+
+commands:
+  - mvn package

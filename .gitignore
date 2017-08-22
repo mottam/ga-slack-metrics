@@ -2,7 +2,9 @@
 .classpath
 .project
 
-credentials.json
+credential.json
+cronjob.yaml
+harbor.yml
 src/main/resources/application.properties
 
 target/

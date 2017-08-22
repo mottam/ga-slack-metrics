@@ -15,7 +15,7 @@ public class AnalyticsReportingServiceFactory {
 
 	public static AnalyticsReporting create() throws GeneralSecurityException, IOException {
 		HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
-		GoogleCredential credentials = GoogleCredential.fromStream(new FileInputStream("credentials.json")).createScoped(AnalyticsReportingScopes.all());
+		GoogleCredential credentials = GoogleCredential.fromStream(new FileInputStream("credential.json")).createScoped(AnalyticsReportingScopes.all());
 
 		return new AnalyticsReporting.Builder(httpTransport, GsonFactory.getDefaultInstance(), credentials)
 				.setApplicationName("metrics").build();
