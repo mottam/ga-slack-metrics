@@ -32,7 +32,6 @@ public class ReportWebHook {
 	public String getWebhookBody() {
 		Map<String, String> map = new HashMap<>();
 		map.put("text", report);
-		map.put("icon_emoji", ":disappointed:");
 		return new Gson().toJson(map).toString();
 	}
 
